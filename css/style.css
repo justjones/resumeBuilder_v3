@@ -15,7 +15,7 @@
 
 h1 {
   font-size: 40px;
-  color: #F5A623;
+  color: #FF8000;
   line-height: 48px;
   display: inline;
 }
@@ -87,12 +87,13 @@ a {
 }
 
 #skillsH3 {
-  color: #F5AE23;
+  color: #FF8000;
   display: none;
 }
 
-.orange {
-  background-color: #F5AE23;
+.blue {
+  background-color: #5882FA;
+  color: #FFFFFF;
 }
 
 .orange-text {
@@ -116,12 +117,12 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #556273;
 }
 
 .flex-box {
-  display: -webkit-flex;
-  display: flex;
+  /*display: -webkit-flex;
+  display: flex;*/
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -140,10 +141,14 @@ ul {
 }
 
 .biopic {
+  margin-top: 5px;
   float: left;
   padding: 10px;
-  width: 200px;
+  width: 170px;
   display: none;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
 }
 
 img {
@@ -168,7 +173,33 @@ span {
 
 #letsConnect {
   text-align: center;
+  background-color: #223240;
 }
+
+/*--------Additional Styles----*/
+#main{
+  background-color: #ffffff;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#topContacts{
+  float: right;
+}
+
+.role-style{
+  margin-left: 20px;
+  color: #B0B5BF;
+ }
+
+ #footerContacts.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 35px;
+  }
+
+/*--------/End Additional Styles-----*/
 
 @media only screen and (max-width: 1024px) {
   #letsConnect {
