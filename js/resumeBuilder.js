@@ -11,7 +11,7 @@ var bio = {
 	"welcomeMessage" : "Hello, I am a Web Developer from Chattanooga, TN",
 	"skills" : ["Javascript", "CSS", "HTML", "Graphic Design", "jQuery", "Adobe CS 6"],
 	"bioPic" : "images/me.jpg"
-}
+};
 
 function displayBio(){
 
@@ -90,7 +90,7 @@ var education = {
 			"url" : "http://udemy.com"
 		}
 	]
-}
+};
 
 function displayEducation(){
 	for (school in education.schools){
@@ -132,7 +132,7 @@ var work = {
 			"description" : "Project total cost over life expectancy for medical care and/or any care that the claimant may need as a result of injury. Including any surgical procedures projected as needed. Responsible for the use of correct Current Procedural Terminology (CPT) and International Classification of Diseases (ICD) codes on all reports of past and future treatments. Researched and coded all medical procedures relevant on per case basis. Researched, priced, and compared equipment, and services (medical and non-medical) that claimant would need on an ongoing basis."
 		}
 	]
-}
+};
 function displayWork(){
 for (job in work.jobs){
 	//create new div for work experience
@@ -164,7 +164,7 @@ var projects = {
 			"images" : ["http://placehold.it/150x150", "http://placehold.it/150x150"]
 		}
 	]
-}
+};
 
 function displayProjects(){
 	for (var project in projects.projects){
@@ -190,18 +190,6 @@ function displayProjects(){
 	}
 }
 displayProjects();
-
-
-/*function locationizer(work_obj){
-	var locationArray = [];
-
-	for (job in work_obj.jobs){
-		var newLocation = work_obj.jobs[job].location;
-		locationArray.push(newLocation);
-	}
-	return locationArray;
-}
-console.log(locationizer(work));*/
 
 var charEscape = function(_html){
 	var newHTML = _html;
