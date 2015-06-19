@@ -94,9 +94,7 @@ var education = {
 
 function displayEducation(){
 	for (school in education.schools){
-		//create new div for schools
 		$("#education").append(HTMLschoolStart);
-		//concat school and title
 		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
 		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
 		var formattedSchoolTitle = formattedName + formattedDegree;
@@ -135,9 +133,7 @@ var work = {
 };
 function displayWork(){
 for (job in work.jobs){
-	//create new div for work experience
-	$("#workExperience").append(HTMLworkStart);
-    //concat employer and title
+    $("#workExperience").append(HTMLworkStart);
     var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
     var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
     var formattedEmployerTitle = formattedEmployer + formattedTitle;    
@@ -169,22 +165,16 @@ var projects = {
 function displayProjects(){
 	for (var project in projects.projects){
 		$("#projects").append(HTMLprojectStart);
-
 		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
 		$(".project-entry:last").append(formattedTitle);
-
 		var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
 		$(".project-entry:last").append(formattedDates);
-
 		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
 		$(".project-entry:last").append(formattedDescription);
-
 		if (projects.projects[project].images.length > 0){
 			for (var images_object in projects.projects[project].images){
-
 			var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[images_object]);
 			$(".project-entry:last").append(formattedImage);
-				
 			}
 		}
 	}
@@ -193,10 +183,8 @@ displayProjects();
 
 var charEscape = function(_html){
 	var newHTML = _html;
-
 	newHTML = _html.replace(/</g, "&lt;");
 	newHTML = newHTML.replace(/>/g, "&gt;");
-
 	return newHTML;
 };
 $("#mapDiv").append(googleMap);
