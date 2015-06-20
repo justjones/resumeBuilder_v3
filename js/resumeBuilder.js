@@ -54,9 +54,9 @@ bio.display = function(){
 			}
 		}
 
-}
+};
 
-bio.display();
+bio.display()
 
 var education = {
 	"schools" : [
@@ -105,7 +105,7 @@ education.display = function(){
 		$(".education-entry:last").append(formattedMajor);
 	}
 }
-education.display();
+education.display()
 
 var work = {
 	"jobs": [
@@ -151,8 +151,8 @@ for (job in work.jobs){
     $(".work-entry:last").append(formattedDescription);
     
 	}
-}
-work.display();
+};
+work.display()
 
 var projects = {
 	"projects" : [
@@ -186,8 +186,8 @@ projects.display = function(){
 			}
 		}
 	}
-}
-projects.display();
+};
+projects.display()
 
 var charEscape = function(_html){
 	var newHTML = _html;
